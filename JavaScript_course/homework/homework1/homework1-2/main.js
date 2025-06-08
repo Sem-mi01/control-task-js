@@ -6,5 +6,5 @@ let firstName = 'Erdogan';
 let middleName = 'Yullia';
 let lastName = 'Vasilievna';
 let person = `${firstName} ${middleName} ${lastName}`;
-console.log(person);
+console.log(person); // в умові ДЗ не зазначено вивести в consol, це зроблено з метою перевірки правильності написання
 
