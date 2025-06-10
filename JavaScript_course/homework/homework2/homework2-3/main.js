@@ -5,9 +5,12 @@
     title: 'Devastation',
     pageCount: 500,
     genre: 'prose',
-    author: [{
+    authors: [{
         name: 'Lubko Deresh',
         age: 40
+    }, {
+        name: 'Lubko Deresh',
+         age: 40
     }]
 }
 console.log(book1);
@@ -19,7 +22,10 @@ let book2 = {
     author: [{
         name: 'Luko Dashvar',
         age: 67
-    }]
+    }, {
+        name: 'Luko Dashvar',
+            age: 67
+        }]
 }
 console.log(book2);
 
@@ -28,6 +34,9 @@ let book3 = {
     pageCount: 550,
     genre: 'poetry',
     author: [{
+        name: 'Lina Kostenko',
+        age: 95
+    }, {
         name: 'Lina Kostenko',
         age: 95
     }]
