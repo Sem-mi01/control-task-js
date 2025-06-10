@@ -1,7 +1,7 @@
 // – Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
 let arr;
-arr = [29, 'book', true, 456, 786, 'phone', 'cofe', '123', 123, false];
+arr = [29, 'book', true, 456, 786, ['fruits', 'vegetables', 'sea'], {name: "Vasya", age: 30}, '123', 123, false];
 console.log(arr);
 console.log(arr[0]);
 console.log(arr[1]);
