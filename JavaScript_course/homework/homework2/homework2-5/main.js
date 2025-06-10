@@ -8,9 +8,21 @@ let temperature = [
     [16, 23, 17],
     [18, 24, 15],
     [24, 30, 18]
-]
+];
 console.log(temperature);
 console.log(temperature [6]);
+
+let temps = [
+    {day: 'Monday', morning: 18, afternoon: 24, evening: 14},
+    {day: 'Tuesday', morning: 20, afternoon: 26, evening: 15},
+    {day: 'Wednesday', morning: 15, afternoon: 20, evening: 12},
+    {day: 'Thursday', morning: 17, afternoon: 22, evening: 13},
+    {day: 'Friday', morning: 16, afternoon: 23, evening: 17},
+    {day: 'Saturday', morning: 18, afternoon: 24, evening: 15},
+    {day: 'Sunday', morning: 24, afternoon: 30, evening: 18}
+];
+
+console.log(temps[1].afternoon);
 
 let degreesTemp = [
     ['Monday', {morning: 18, afternoon: 24, evening: 14}],
