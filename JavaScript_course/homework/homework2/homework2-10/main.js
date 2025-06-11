@@ -7,14 +7,14 @@
 //     Також потрібно врахувати, коли введені рівні числа.
 
 let a = 55;
-let b = 55;
+let b = 65;
 // if (a >= b) {
 //     console.log(a);
 // }
 if (a > b) {
     console.log(a);
 } else if (a < b) {
-    console.log('error');
+    console.log(b);
 } else if (a === b) {
     console.log('===');
 }
