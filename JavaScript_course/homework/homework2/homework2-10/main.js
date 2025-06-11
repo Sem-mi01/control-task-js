@@ -8,6 +8,9 @@
 
 let a = 55;
 let b = 55;
+// if (a >= b) {
+//     console.log(a);
+// }
 if (a > b) {
     console.log(a);
 } else if (a < b) {
