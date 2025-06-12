@@ -28,8 +28,8 @@ let x = 0;
 
 // але краще
 if (!x) {
-    // x = 'default';       // (консоль не виводе)
-    console.log('default');
+    x = 'default';
+    console.log(x);
 }
 
 
