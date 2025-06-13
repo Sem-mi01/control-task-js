@@ -4,6 +4,6 @@
 
 let i = 0;
 while (i < 20) {
-    document.write(`<h1>Lorem ipsum dolor sit - ${i}</h1>`);
+    document.write(`<h1>Lorem ipsum dolor sit - ${i+1}</h1>`);
     i++;
 }
