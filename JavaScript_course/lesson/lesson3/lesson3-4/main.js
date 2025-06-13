@@ -5,7 +5,7 @@
 //     skills: [],
 // }
 //
-// for (let fileName in user) {
+// for (let fieldName in user) {
 //     // console.log(fieldName);  // id, name, status.skills
 //     // console.log(user[fieldName]); // виводе і характеристики
 //     // console.log(user['name']);
