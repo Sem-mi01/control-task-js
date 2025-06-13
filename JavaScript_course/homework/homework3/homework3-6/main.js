@@ -48,3 +48,6 @@ for (const product of products) {
                     <img src="${product.image}" alt="product-image">
                     </div>`)
 }
+
+
+
