@@ -4,7 +4,7 @@
 
 let values = [23, true, 98, 'red', 'green', 'yellow', 765, false, 987, 'undefined'];
 for (let i = 0; i < values.length; i++) {
-if (typeof values[i] === 'boolean') {
+if (typeof values[i] === 'string') {
     console.log(values[i]);
 }
 }
