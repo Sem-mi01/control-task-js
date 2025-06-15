@@ -2,11 +2,11 @@
 //
 // – створити функцію, яка обчислює та повертає площу кола з радіусом r
 
-function radius (d) {
-    const result = d/2;
+function poundSquare (radius) {
+    const result = Math.PI * radius * radius;
     console.log(result);
     return result;
 }
-    let d = 50;
+    let radius = 5;
 
-    radius(d)
+    poundSquare (radius)
