@@ -239,23 +239,25 @@ for (const Element of usersList) {
         console.log(fieldElement, Element[fieldElement]);
     }
 }
-for (let i = 0; i < 2; i++) {
+    document.write(`<div class="cards">`);
+for (let i = 0; i < usersList.length; i++) {
     const user = usersList[i];
-    document.write (`<div class="cards">
-                       <p>${user.id}</p>
-                       <h3>${user.name}</h3>
-                       <p>${user.username}</p>
-                       <p>${user.email}</p>
-                       <p>${user.address.street}</p>
-                       <p>${user.address.suite}</p>
-                       <p>${user.address.city}</p>
-                       <p>${user.address.zipcode}</p>
-                       <p>${user.address.geo.lat}</p>
-                       <p>${user.address.geo.lng}</p>
-                       <p>${user.phone}</p>
-                       <p>${user.website}</p>
-                       <p>${user.company.name}</p>
-                       <p>${user.company.catchPhrase}</p>
-                       <p>${user.company.bs}</p>
-</div>`);
+    document.write (`<div class="card">
+                           <p>${user.id}</p>
+                           <h3>${user.name}</h3>
+                           <p>${user.username}</p>
+                           <p>${user.email}</p>
+                           <p>${user.address.street}</p>
+                           <p>${user.address.suite}</p>
+                           <p>${user.address.city}</p>
+                           <p>${user.address.zipcode}</p>
+                           <p>${user.address.geo.lat}</p>
+                           <p>${user.address.geo.lng}</p>
+                           <p>${user.phone}</p>
+                           <p>${user.website}</p>
+                           <p>${user.company.name}</p>
+                           <p>${user.company.catchPhrase}</p>
+                           <p>${user.company.bs}</p>
+                       </div>`);
 }
+    document.write(`</div>`);
