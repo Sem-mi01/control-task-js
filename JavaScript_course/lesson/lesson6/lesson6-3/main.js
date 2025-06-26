@@ -89,4 +89,17 @@ let users = [
 // }));
 // // сортування по алфавіту
 
-users.reduce();
+let reduce = users.reduce((previousValue, currentValue) => {
+    if (currentValue.status) {
+    previousValue.statT.push(currentValue)
+} else {
+        previousValue.statF.push(currentValue)
+    }
+    return previousValue
+ },{statT: [], statF: []});
+
+console.log(reduce);
+// щоб не виводити окрему змінну можна одразу замість let reduce = поставити console.log
+// компонування обєктів
+// де previousValue = accumulator
+// currentValue = user
