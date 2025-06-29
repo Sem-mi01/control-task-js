@@ -32,11 +32,9 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-const sort =  coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
-console.log(sort);
-
-const filter= sort.filter(value => value.monthDuration > 5);
-console.log(filter);
-
-console.log(filter.map((value, index) => ({...value, id: index + 1
-})));
+const map1 = coursesAndDurationArray
+    .sort((a, b) => b.monthDuration - a.monthDuration)
+    .filter(value => value.monthDuration > 5)
+    .map((value, index) => ({...value, id: index + 1
+}));
+console.log(map1);
