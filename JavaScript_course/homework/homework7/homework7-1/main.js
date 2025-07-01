@@ -11,15 +11,16 @@ function User(id,name, surname , email, phone ) {
     this.email = email;
     this.phone = phone;
 }
-let user1 = new User(1, 'Roman', 'Ivanenko', 'Ivanenko@gmail.com', '5674531');
-let user2 = new User(2,  'Katerina',  'Pruhodko', 'Pruhodko@gmail.com',  '5674532');
-let user3 = new User(3,  'Polina',  'Gnatenko',  'Gnatenko@gmail.com',  '5674533');
-let user4 = new User(4,  'Olersandr',  'Petrenko',  'Petrenko@gmail.com', '5674534');
-let user5 = new User(5,  'Volodumur', 'Kovalenko',  'Kovalenko@gmail.com', '5674535');
-let user6 = new User(6,  'Anna',  'Mukutenko',  'Mukutenko@gmail.com',  '5674536');
-let user7 = new User(7,  'Dmutro',  'Avramenko', 'Avramenko@gmail.com',  '5674537');
-let user8 = new User(8,  'Oksana',  'Kostenko',  'Kostenko@gmail.com',  '5674538');
-let user9 = new User(9,  'Svitlana',  'Stepanenko',  'Stepanenko@gmail.com', '5674539');
-let user10 = new User(10,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310');
-let usersArray = [user1, user2, user3, user4, user5, user6, user7, user8, user9, user10];
-console.log(usersArray);
+let users = [
+    new User(1, 'Roman', 'Ivanenko', 'Ivanenko@gmail.com', '5674531'),
+    new User(2,  'Katerina',  'Pruhodko', 'Pruhodko@gmail.com',  '5674532'),
+    new User(3,  'Polina',  'Gnatenko',  'Gnatenko@gmail.com',  '5674533'),
+    new User(4,  'Olersandr',  'Petrenko',  'Petrenko@gmail.com', '5674534'),
+    new User(5,  'Volodumur', 'Kovalenko',  'Kovalenko@gmail.com', '5674535'),
+    new User(6,  'Anna',  'Mukutenko',  'Mukutenko@gmail.com',  '5674536'),
+    new User(7,  'Dmutro',  'Avramenko', 'Avramenko@gmail.com',  '5674537'),
+    new User(8,  'Oksana',  'Kostenko',  'Kostenko@gmail.com',  '5674538'),
+    new User(9,  'Svitlana',  'Stepanenko',  'Stepanenko@gmail.com', '5674539'),
+    new User(10,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310'),
+    ]
+console.log(users);
