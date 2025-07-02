@@ -2,10 +2,8 @@
 
 import users from '../homework7-1/main.js';
 
+let newUsers = [...users];
+console.log(newUsers.sort((id1, id2) => id1.id - id2.id));
 
-users.sort((id1, id2) => {
-    return id1.id - id2.id;
-});
-console.log(users);
 
 
