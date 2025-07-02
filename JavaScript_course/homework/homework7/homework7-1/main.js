@@ -12,16 +12,16 @@ function User(id,name, surname , email, phone ) {
     this.phone = phone;
 }
 let users = [
-    new User(1, 'Roman', 'Ivanenko', 'Ivanenko@gmail.com', '5674531'),
-    new User(2,  'Katerina',  'Pruhodko', 'Pruhodko@gmail.com',  '5674532'),
+    new User(4, 'Roman', 'Ivanenko', 'Ivanenko@gmail.com', '5674531'),
+    new User(9,  'Katerina',  'Pruhodko', 'Pruhodko@gmail.com',  '5674532'),
     new User(3,  'Polina',  'Gnatenko',  'Gnatenko@gmail.com',  '5674533'),
-    new User(4,  'Olersandr',  'Petrenko',  'Petrenko@gmail.com', '5674534'),
-    new User(5,  'Volodumur', 'Kovalenko',  'Kovalenko@gmail.com', '5674535'),
+    new User(1,  'Olersandr',  'Petrenko',  'Petrenko@gmail.com', '5674534'),
+    new User(10,  'Volodumur', 'Kovalenko',  'Kovalenko@gmail.com', '5674535'),
     new User(6,  'Anna',  'Mukutenko',  'Mukutenko@gmail.com',  '5674536'),
     new User(7,  'Dmutro',  'Avramenko', 'Avramenko@gmail.com',  '5674537'),
     new User(8,  'Oksana',  'Kostenko',  'Kostenko@gmail.com',  '5674538'),
-    new User(9,  'Svitlana',  'Stepanenko',  'Stepanenko@gmail.com', '5674539'),
-    new User(10,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310'),
+    new User(2,  'Svitlana',  'Stepanenko',  'Stepanenko@gmail.com', '5674539'),
+    new User(5,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310'),
     ]
 console.log(users);
 
