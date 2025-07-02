@@ -5,9 +5,10 @@
 import users from '../homework7-1/main.js';
 
 
-// const filterUsers = users.filter((user) => user.id % 2 === 0);
-// console.log(filterUsers);
+const filterUsers = users.filter((User) => User.id % 2 === 0);
+console.log(filterUsers);
 
-users.filter(function(user) {
-    return user.id % 2 === 0;
-});
+// users.filter(function(user) {
+//     return user.id % 2 === 0;
+// });
+
