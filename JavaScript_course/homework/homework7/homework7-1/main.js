@@ -24,3 +24,4 @@ let users = [
     new User(10,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310'),
     ]
 console.log(users);
+
