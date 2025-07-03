@@ -4,15 +4,37 @@
 //
 // створити пустий масив, наповнити його 10 об’єктами Client
 
-function Client(id, name, surname , email, phone, order) {
+// function Client(id, name, surname , email, phone, order) {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+//     this.order = order;
+// }
+
+// для продукта можна створити окрему конструкцію:
+function Client(id, name, surname , email, phone, ...products) {
     this.id = id;
     this.name = name;
     this.surname = surname;
     this.email = email;
     this.phone = phone;
-    this.order = order;
+    this.order = products;
+}
+function Product(title, price) {
+    this.title = title;
+    this.price = price;
 }
 
+const client = new Client(1,
+    'Roman',
+    'Ivanenko',
+    'Ivanenko@gmail.com',
+    '5674531',
+    new Product('tv',23000),
+    new Product('phone', 12000)
+);
 
 let clients = [
     new Client(1, 'Roman', 'Ivanenko', 'Ivanenko@gmail.com', '5674531',[{title: 'tv', price: 23000}, {title: 'phone', price: 12000}]),
@@ -22,11 +44,18 @@ let clients = [
     new Client(5,  'Volodumur', 'Kovalenko',  'Kovalenko@gmail.com', '5674535', [{title: 'trimmer', price: 3500}, {title: 'irrigator', price: 6800}]),
     new Client(6,  'Anna',  'Mukutenko',  'Mukutenko@gmail.com',  '5674536', [{title: 'coffee maker', price: 1400}, {title: 'kittle', price: 1000}]),
     new Client(7,  'Dmutro',  'Avramenko', 'Avramenko@gmail.com',  '5674537', [{title:
-    'toaster', price: 1800}, {title: 'multi-oven', price: 5000}]),
+            'toaster', price: 1800}, {title: 'multi-oven', price: 5000}]),
     new Client(8,  'Oksana',  'Kostenko',  'Kostenko@gmail.com',  '5674538', [{title:
-    'bag', price: 3000}, {title: 'dress', price: 2500}]),
+            'bag', price: 3000}, {title: 'dress', price: 2500}]),
     new Client(9,  'Svitlana',  'Stepanenko',  'Stepanenko@gmail.com', '5674539', [{title: 'sneakers', price: 2300}, {title: 'shoes', price: 3500}]),
     new Client(10,  'Bogdan', 'Magdenko', 'Magdenko@gmail.com',  '56745310', [{title:
-    'swimming pool', price: 6000}, {title: 'fireplace', price: 15000}]),
-]
-console.log(clients);
+            'swimming pool', price: 6000}, {title: 'fireplace', price: 15000}]),
+];
+console.log(client.order);
+
+clients.forEach((client, index) => {
+    console.log(`client ${index + 1}:`);
+    console.log(client.order);
+});
+
+
