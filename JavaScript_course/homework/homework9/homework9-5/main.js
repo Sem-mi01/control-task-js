@@ -76,14 +76,12 @@ for (const courses of coursesArray) {
     let courseDiv = document.createElement('div');
     courseDiv.classList.add('course');
 
-    let h2 = document.createElement('h2');
-    h2.innerText = courses.title;
+    let title = document.createElement('h2');
+    title.innerText = courses.title;
 
-    let h3 = document.createElement('h3');
-    h3.innerText = courses.monthDuration;
+    let period = document.createElement('div');
+    period.innerText = `monthDuration: ${courses.monthDuration}, hourDuration: ${courses.hourDuration}`;
 
-    let p = document.createElement('p');
-    p.innerText = courses.hourDuration;
 
     let ul = document.createElement('ul');
     for (const modulesElement of courses.modules) {
@@ -91,6 +89,6 @@ for (const courses of coursesArray) {
         li.innerText = modulesElement;
         ul.appendChild(li);
         }
-    courseDiv.append(h2, h3, p, ul);
+    courseDiv.append(title, period, ul);
     document.body.appendChild(courseDiv);
 }
