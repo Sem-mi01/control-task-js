@@ -22,25 +22,25 @@ const nextButton = document.getElementById('nextButton');
 function displayItems() {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const currentItems = data.slice(startIndex, endIndex);
+    const currentItems = arr.slice(startIndex, endIndex);
     arrayDiv.innerHTML = '';
 
-    currentItems.forEach((item => {
+    currentItems.forEach(item => {
         const p = document.createElement('p');
-        p.textArray = item;
+        p.textContent = item;
         arrayDiv.appendChild(p);
-    }));
+    });
     prevButton.disabled = currentPage === 1;
-    nextButton.disabled = endIndex >= data.length;
+    nextButton.disabled = endIndex >= arr.length;
 }
 prevButton.addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
-
+        displayItems();
     }
 });
 nextButton.addEventListener('click', () => {
-    const maxPages = Math.ceil(data.length / itemsPerPage);
+    const maxPages = Math.ceil(arr.length / itemsPerPage);
     if (currentPage < maxPages) {
         currentPage++;
         displayItems();
