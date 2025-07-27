@@ -12,23 +12,25 @@
 <h1>Test</h1>
 <form>
   <div class="input-top">
-    <label for="name">Name/Value Pair</label>
-    <input type="text" id="name" name="name" placeholder="Name=Value">
+    <div class="wrapper">
+      <label for="name">Name/Value Pair</label>
+      <input type="text" id="name" name="name" placeholder="Name=Value">
+    </div>
     <button type="submit">Add</button>
   </div>
 
   <div class="input-bottom">
-    <label for="value">Name/Value Pair List</label>
-    <input type="text" id="value" name="value">
-    <div>
+    <div class="list">
+      <label for="value">Name/Value Pair List</label>
+      <textarea id="value" name="value" rows="40"></textarea>
+    </div>
+    <div class="button-list">
       <button type="submit">Sort by Name</button>
-      <button type="submit">Sort by Value</button>
+      <button type="submit" class="middle">Sort by Value</button>
       <button type="submit">Delete</button>
     </div>
   </div>
 
-
-  l
 </form>
 
 
