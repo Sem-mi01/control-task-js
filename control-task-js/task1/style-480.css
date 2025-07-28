@@ -1,0 +1,16 @@
+@media (min-width: 480px) {
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+    .wrapper input {
+        flex: 1;
+    }
+    .wrapper button {
+        margin-left: 10px;
+    }
+    .button-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
