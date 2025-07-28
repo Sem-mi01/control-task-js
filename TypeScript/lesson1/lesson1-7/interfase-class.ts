@@ -20,6 +20,8 @@ class User {
         this.name = name;
         this.age = age;
         this.status = status;
+
+        this.greeting();  // автоматичний виклик
     }
 
     greeting(){
@@ -31,3 +33,5 @@ let user = new User('asd', 123, false)
 let usersX: User [] = [
     new User('asd', 123, true)
 ];
+// console.log(usersX);
+
