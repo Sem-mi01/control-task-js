@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+
+.conteiner p {
+    font-size: 40px;
+}
+.conteiner img {
+    width: 200px;
+    height: 200px;
+}
