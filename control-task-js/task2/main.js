@@ -30,7 +30,6 @@ if (window.location.pathname.includes('user-details.html')) {
         <p><b>name:</b> ${user.name}</p>
         <p><b>username:</b> ${user.username}</p>
         <p><b>email:</b> ${user.email}</p>
-
         <div id="address">
           <h3>Address</h3>
           <p><b>street:</b> ${user.address?.street}</p>
