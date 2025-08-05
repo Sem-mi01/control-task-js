@@ -26,11 +26,31 @@ if (window.location.pathname.includes('user-details.html')) {
             const container = document.getElementById('user-info');
             container.innerHTML = `
       <h2>Info about user</h2>
-      <p><b>id:</b> <i>${user.id}</i></p>
-      <p><b>name:</b> <i>${user.name}</i></p>
-      <p><b>email:</b> <i>${user.email}</i></p>
-      <p><b>phone:</b> <i>${user.phone}</i></p>
-      <p><b>website:</b> <span style="text-decoration: underline;">${user.website}</span></p>`;
+        <p><b>id:</b> ${user.id}</p>
+        <p><b>name:</b> ${user.name}</p>
+        <p><b>username:</b> ${user.username}</p>
+        <p><b>email:</b> ${user.email}</p>
+
+        <div id="address">
+          <h3>Address</h3>
+          <p><b>street:</b> ${user.address?.street}</p>
+          <p><b>suite:</b> ${user.address?.suite}</p>
+          <p><b>city:</b> ${user.address?.city}</p>
+          <p><b>zipcode:</b> ${user.address?.zipcode}</p>
+          <p><b>geo.lat:</b> ${user.address?.geo?.lat}</p>
+          <p><b>geo.lng:</b> ${user.address?.geo?.lng}</p>
+        </div>
+
+        <p><b>phone:</b> ${user.phone}</p>
+        <p><b>website:</b> <a href="http://${user.website}" target="_blank">${user.website}</a></p>
+
+        <div>
+          <h3>Company</h3>
+          <p><b>name:</b> ${user.company?.name}</p>
+          <p><b>catchPhrase:</b> ${user.company?.catchPhrase}</p>
+          <p><b>bs:</b> ${user.company?.bs}</p>
+        </div>
+        `;
         });
 
     function loadPosts() {

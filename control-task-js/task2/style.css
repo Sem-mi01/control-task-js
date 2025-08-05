@@ -71,7 +71,7 @@ h1{
 /*.....................user-details.....................*/
 
 #user-info{
-    width: 500px;
+    width: 700px;
     margin: 40px auto;
     padding: 15px;
     background-color: #e3f2fd;
@@ -134,6 +134,9 @@ h1{
 }
 .post-block a:hover{
     background: #1564c0;
+}
+#address{
+    padding-bottom: 20px;
 }
 
 
